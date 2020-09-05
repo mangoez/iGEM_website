@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unimelb iGEM</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon' />
+
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                    <img src="img/unimelb.jpg" alt="">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#project" class="nav__link">Project Details</a></li>
+                    <li class="nav__item"><a href="index.html#timeline" class="nav__link">Timeline</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                 Evolution of our <strong>Cloning Strategy</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro label">By Alex and Thanushi</p>
+            <img src="img/than_alex.jpg" alt="" class="intro__img">
+        </section>
+
+        <div class="project-item-individual">
+            <p>*pew* *pew* *pew* coo-coo-c-c-co-co-coo right on,right on,right on</p>
+        </div>
+
+
+        <!-- Initial design concepts -->
+        <section class="about-us" id="about">
+            <h2 class="section__title section__title--about">Initial design concept</h2>
+            <p class="section__subtitle section__subtitle--about label">"Peralta that's enough"</p>
+
+            <div class="about-us__body">
+                <strong>Initially wanted to follow GAPTrap paper to the T</strong>
+                <p>Use GAPTrap – mCherry- IRES- Hygro as backbone</p>
+                <ul>
+                   <li>Ampicillin and hygromycin resistance</li>
+                </ul>
+
+                <p>Clone in sACE 2 from twist plasmid using AscI and SalI digestion</p>
+                <ul>
+                   <li>ACE 2 plasmid has ampicillin resistance</li>
+                   <li>ACE 2 replaces mCherry</li>
+                </ul>
+
+                <p>Form GAPTrap guide RNA and Cas 9 mRNA</p>
+                <p>Electroporate into iPSC</p>
+           </div>
+
+           <img src="img/.png" alt="plz no nudes here" class="about-us__img">
+        </section>
+
+
+        <!-- CRISPR -->
+        <section class="about-us" id="about">
+           <h2 class="section__title section__title--about">CRISPR consideration</h2>
+           <p class="section__subtitle section__subtitle--about label">"Kwazy Cupcakes..."</p>
+
+           <div class="about-us__body">
+               <strong>Changed to Geng et al.’s CRISPR method and considered lipofectamine</strong>
+               <p>Form guide RNA dimer</p>
+               <p>Clone into a Addgene’s PX459V2.0-eSpCas9 plasmid (#108292) by BbsI digestion</p>
+               <ul>
+                   <li>Much faster CRISPR method since using single plasmid</li>
+                   <li>Also selects cells by high dose puromycin = faster selection</li>
+               </ul>
+
+               <p>Lipofectamine transfection</p>
+               <ul>
+                   <li>
+                       Plasmids/DNA will be coated in a lipid layer forming a liposome,
+                       which then can merge into cell membranes without use of electric current
+                   </li>
+                   <li>
+                       Cheaper, easier
+                   </li>
+               </ul>
+           </div>
+
+
+           <img src="img/.png" alt="plz no nudes here" class="about-us__img">
+        </section>
+
+
+        <!-- Initial design concepts -->
+        <section class="about-us" id="about">
+            <h2 class="section__title section__title--about">Ed Stanley Consultation</h2>
+            <p class="section__subtitle section__subtitle--about label">"Vivians lips are so ample"</p>
+            <div class="about-us__body">
+                <strong>Met with Ed Stanley July 24th</strong>
+                <p>Suggested using GAPTrap- mtagtdTom-IRES-Muro</p>
+                <ul>
+                    <li>tdTomato fluoresces much brighter than mCherry</p>
+                    <li>Uses puromycin, which selects better than hygromycin</p>
+                </ul>
+
+                <p>Change antibiotic resistance of ACE 2 plasmid to kanamycin/chloramphenicol</p>
+                <ul>
+                    <li>Different resistance to the GAPTrap plasmid’s ampicillin resistance
+                        = more efficient selection</li>
+                </ul>
+
+                <p>Check Restriction enzyme cut sites</p>
+                <ul>
+                    <li>Suggested phosphatase treatment to make sure
+                        ligation is directional in case enzymes don’t work well together</li>
+                </ul>
+
+                <p>Will provide us with TALENs plasmids</p>
+                <ul>
+                    <li>No need for making a CRISPR plasmid</li>
+                    <li>GAPDH has a lot of pseudogenes so TALENs’ specificity makes
+                        it more ideal than CRISPR</li>
+                </ul>
+
+                <p>Suggested using electroporation instead of lipofectamine</p>
+                <ul>
+                    <li>Lipofectamine = aggregating reagent, risk of multiple inserts
+                        since no guarantee that each liposome doesn’t contain other fragments/junk</li>
+                    <li>Suggested doing a trial electroporation run with uncloned plasmids
+                        to check that we’re not too dumb and can select for some cells</li>
+                </ul>
+
+                <p>Request for more bacteria when ordering plasmids so we don’t
+                   have to grow them up ourselves</p>
+            </div>
+
+            <img src="img/.png" alt="plz no nudes here" class="about-us__img">
+        </section>
+
+
+        <!-- Nadia -->
+        <section class="about-us" id="about">
+           <h2 class="section__title section__title--about">Nadia Consultation</h2>
+           <p class="section__subtitle section__subtitle--about label">"HELP ME, I'VE GONE FULL BOYLE"</p>
+
+           <div class="about-us__body">
+               <p>Should we transfect macrophages or transfect iPSCs then differentiate them into macrophages afterwards?</p>
+               <ul>
+                   <li>Macrophages are designed to reject foreign DNA so better to transfect iPSCs</li>
+               </ul>
+
+               <p>Use Nadia’s protocol for differentiating iPSCs to
+                  macrophages after they’ve been transfected and verified</p>
+           </div>
+
+           <img src="img/.png" alt="plz no nudes here" class="about-us__img">
+        </section>
+
+
+        <!-- Gibson assembly -->
+        <section class="about-us" id="about">
+           <h2 class="section__title section__title--about">Gibson Assembly</h2>
+           <p class="section__subtitle section__subtitle--about label">"Do you see me as a father figure Peralta?"</p>
+
+           <div class="about-us__body">
+               <p>But Gibson assembly requires fragments of >200 nucleotides</p>
+               <ul>
+                   <li>HA tag is 27 bp</li>
+                   <li>P2A (57 bp) and T2A tags (54bp)</li>
+               </ul>
+
+               <p>So if we did use Gibson, would need to order constructs
+                  of T2A-ACE2-tag and P2A-tdTom</p>
+               <ul>
+                   <li>And gibson involves additional step of PCR to verify primers</li>
+               </ul>
+
+               <p>Decided instead to order them as a
+                  single synthesised construct using the sponsorship from Twist</p>
+               <p>Later on, we can use Gibson to rearrange order of cistrons
+                  and see how that affects expression levels</p>
+           </div>
+
+           <img src="img/.png" alt="plz no nudes here" class="about-us__img">
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:melbourneigem@gmail.com" class="footer__link">melbourneigem@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.facebook.com/MelbourneUniIGem" target="black">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>

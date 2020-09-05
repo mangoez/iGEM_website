@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Unimelb iGEM</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon' />
+
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                    <img src="img/unimelb.jpg" alt="">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#project" class="nav__link">Project Details</a></li>
+                    <li class="nav__item"><a href="index.html#timeline" class="nav__link">Timeline</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Methods for <strong>Protein Tags</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro label">By Cathy and Kevin</p>
+            <img src="img/cath_kev.jpg" alt="" class="intro__img">
+        </section>
+
+        <div class="project-item-individual">
+            <p>Ching Chong Ping Pong something about tags and shit
+        </div>
+
+
+        <!-- Method 1 -->
+        <section class="about-us" id="about">
+           <h2 class="section__title section__title--about">Method #1</h2>
+           <p class="section__subtitle section__subtitle--about label">something about protein tags</p>
+
+           <div class="about-us__body">
+               <p><strong>Goal</strong></p>
+               <p>identify higher concentrations of ACE2 receptors expressed
+                  -- displaying that our engineered macrophages are expressing soluble ACE2</p>
+               <p>Thought process for immunoprecipitation tag to test method #1 in order:</p>
+
+               <ol>
+                   <li>
+                      Find ELISA provider / comes with whole kit after
+                      sequence submission -- asking if WEHI can provide
+                   </li>
+                   <li>
+                     Considering if this step can be done in one with
+                     testing method 2 // requires a separate experiment with ACE2 specific antibodies
+                   </li>
+                   <li>
+                    Looking into designing ACE2 specific antibodies
+                   </li>
+               </ol>
+           </div>
+
+           <img src="img/plz no nudes here.png" alt="Cute ass macrophages" class="about-us__img">
+        </section>
+
+        <!-- method 2 -->
+        <section class="about-us" id="about">
+           <h2 class="section__title section__title--about">Method #2</h2>
+           <p class="section__subtitle section__subtitle--about label">blah blah wanky smart shit</p>
+
+           <div class="about-us__body">
+               <p><strong>Goal</strong></p>
+               <p>identify higher concentrations of ACE2 receptors expressed
+                  -- displaying that our engineered macrophages are expressing soluble ACE2</p>
+               <p>Thought process for immunoprecipitation tag to test method #1 in order:</p>
+
+               <ol>
+                   <li>
+                       His-tag: problem with random binding given common amino acid
+                   </li>
+                   <li>
+                       Discovered that ACE2 function optimally at a pH of 6.0 - 9.0
+                   </li>
+                   <li>
+                       HA tag:  problem, immunogenicity
+                   </li>
+                   <li>
+                       Intein tag: problem, requires special vector
+                   </li>
+                   <li>
+                       GST tag: problem, large size
+                   </li>
+                   <li>
+                       Considered using FACS as the primary detection method for SP1 complex
+                   </li>
+                   <li>
+                       Reconsidering HA tag after given guidance: immunogenicity is
+                       not an issue if the macrophages themselves express the tag
+                   </li>
+                   <li>
+                       Deciding to create two plasmids, one with His tag and the other with HA tag
+                   </li>
+                   <li>
+                       Finding out the tags must be placed on the C terminal end given
+                       possible interruptions with signal peptidase -- problem with placing
+                       tag on ace2 in plasmid, would be easier if the tag is not at the
+                       terminal -- tag must be at terminal // plasmid altered
+                   </li>
+               </ol>
+           </div>
+
+           <img src="img/.png" alt="plz no nudes here" class="about-us__img">
+        </section>
+
+
+        <!-- other  -->
+        <section class="about-us" id="about">
+           <h2 class="section__title section__title--about">Other considerations</h2>
+           <p class="section__subtitle section__subtitle--about label">smort smort</p>
+
+           <div class="about-us__body">
+               <p><strong>Met with Suzy Butcher early on for advice</strong></p>
+               <ul>
+                   <li>Use endotoxin free DNA prep kits</li>
+                   <li>Suggested c-myc and FLAG tag for macrophages</li>
+               </ul>
+           </div>
+
+           <img src="img/.png" alt="plz no nudes here" class="about-us__img">
+        </section>
+
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:melbourneigem@gmail.com" class="footer__link">melbourneigem@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.facebook.com/MelbourneUniIGem" target="black">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
